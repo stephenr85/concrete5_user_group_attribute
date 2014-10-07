@@ -48,7 +48,7 @@ class UserGroupAttributeTypeController extends AttributeTypeController  {
 
 	
 	public function type_form() {
-		$this->set('form', Loader::helper('form'));		
+		$this->set('form', Loader::helper('form'));
 		$this->load();		
 	}
 	
@@ -56,7 +56,7 @@ class UserGroupAttributeTypeController extends AttributeTypeController  {
 	public function search() {
 		$helper = Loader::helper('user_group_attribute', 'user_group_attribute');
 		$this->set('groupOptions', $helper->getGroupsInputOptions());
-		
+		$this->set('form', Loader::helper('form'));
 	}
 	
 	public function form() {

@@ -1,3 +1,3 @@
 <?php 
-$opts = array(''=>'Select...') + $groupOptions;
+$opts = array(''=>t('Select...')) + $groupOptions;
 echo $form->select($this->controller->field('gID'), $opts);
